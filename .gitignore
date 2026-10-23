@@ -29,3 +29,16 @@ __pycache__/
 .ruff_cache/
 submission/*
 !submission/README.md
+
+# Local backups
+*.bak-*
+*.bak2
+
+# Local deploy state and build copies
+*.bak2-*
+deploy/agentcore/aws-targets.json
+deploy/agentcore/.cli/
+deploy/agentcore/cdk/cdk.out/
+deploy/app/agent/agent/
+deploy/app/agent/decider_kit/
+

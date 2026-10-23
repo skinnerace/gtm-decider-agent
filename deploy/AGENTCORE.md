@@ -107,6 +107,8 @@ file maps to a JSON config file and includes validation constraints as comments 
 
 ## Deployment
 
+Deploy in `us-east-2` using AWS profile `gtmsos` (`AWS_REGION=us-east-2`, `AWS_PROFILE=gtmsos`). In PowerShell, set `$env:AWS_REGION="us-east-2"` and `$env:AWS_PROFILE="gtmsos"` before deployment.
+
 Deployments are orchestrated through the CLI:
 
 ```bash

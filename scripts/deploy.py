@@ -180,7 +180,7 @@ def deploy() -> None:
     print(f"[deploy] deploying to account ...{acct[-4:]} in {region} (about 5 minutes the first time)...")
     t0 = time.time()
     try:
-        r = subprocess.run([ac, "deploy", "-y", "--json"], cwd=DEPLOY, check=False, capture_output=True, text=True,
+        r = subprocess.run([ac, "deploy", "--json"], cwd=DEPLOY, check=False, capture_output=True, text=True,
                            env={**os.environ, "AWS_REGION": region})
     finally:
         SPEC.write_text(original)  # keys never stay in the committed config

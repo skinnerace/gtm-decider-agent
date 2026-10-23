@@ -173,7 +173,7 @@ def cmd_aws_login(_: list[str]) -> None:
     key_id = input("  AWS Access Key ID: ").strip()
     secret = getpass.getpass("  AWS Secret Access Key (hidden): ").strip()
     token = getpass.getpass("  Session token (Enter if none, hidden): ").strip()
-    region = input("  Region [us-east-1]: ").strip() or "us-east-1"
+    region = input("  Region [us-east-2]: ").strip() or "us-east-2"
     if not key_id or not secret:
         sys.exit("nothing saved")
     aws = Path.home() / ".aws"

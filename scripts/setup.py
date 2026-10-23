@@ -393,7 +393,7 @@ def main() -> None:
     ap.add_argument("--key", help="API key for the AWS User Group Madurai hosted API (decider and LLM)")
     ap.add_argument("--url", help="decider URL for --mode custom")
     ap.add_argument("--bedrock-model", default=os.environ.get("BEDROCK_MODEL_ID", DEFAULT_BEDROCK_MODEL))
-    ap.add_argument("--region", default=os.environ.get("AWS_REGION", "us-east-1"))
+    ap.add_argument("--region", default=os.environ.get("AWS_REGION", "us-east-2"))
     ap.add_argument("--yes", action="store_true", help="accept the recommendations")
     ap.add_argument("--skip-aws", action="store_true")
     ap.add_argument("--check-only", action="store_true", help="report the checks and the recommendation; change nothing")

@@ -1,5 +1,7 @@
 # Getting started: your hackathon submission, step by step
 
+Deploy in `us-east-2` using AWS profile `gtmsos` (`AWS_REGION=us-east-2`, `AWS_PROFILE=gtmsos`). In PowerShell, set `$env:AWS_REGION="us-east-2"` and `$env:AWS_PROFILE="gtmsos"` before deployment.
+
 AWS User Group Madurai kit for the **Agent Experience Hackathon: Strands Decider**
 (submissions 16 to 23 October 2026, 11:59 p.m. PT). Works on **macOS, Windows and Linux**. You
 install one app; everything else is installed for you, after asking.
@@ -123,7 +125,7 @@ Every step is a `./kit` command (Windows: `.\kit.cmd`; `./kit help` lists them):
 | `the browser needs a few system libraries` (Linux) | answer **y** (one sudo command), or run the printed command later |
 | `Ollama is not running` | start the Ollama app, or `ollama serve` |
 | `requires a newer version of Ollama` | `./kit tools install ollama` again, or https://ollama.com/download |
-| Bedrock `AccessDeniedException` | enable Amazon Nova Pro in Bedrock → Model access (us-east-1) |
+| Bedrock `AccessDeniedException` | enable Amazon Nova Pro in Bedrock → Model access (us-east-2) |
 | `decider returned 401` | check the key in `.env` (`DECIDER_API_KEY`) |
 | `decider returned 429` | free-tier limit (10 requests a minute): wait a minute |
 | `AgentCore CLI not found` | `./kit tools install deploy` |

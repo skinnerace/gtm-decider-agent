@@ -53,7 +53,7 @@ class AgentCoreClient:
         import boto3
 
         self.arn = arn
-        self.client = boto3.client("bedrock-agentcore", region_name=os.environ.get("AWS_REGION", "us-east-1"))
+        self.client = boto3.client("bedrock-agentcore", region_name=os.environ.get("AWS_REGION", "us-east-2"))
         self.sessions: dict[str, str] = {}
 
     def chat(self, message: str, session_id: str = "demo", images: list[str] | None = None) -> dict[str, Any]:

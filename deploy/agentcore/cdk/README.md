@@ -1,5 +1,7 @@
 # AgentCore CDK Project
 
+Deploy in `us-east-2` using AWS profile `gtmsos` (`AWS_REGION=us-east-2`, `AWS_PROFILE=gtmsos`). In PowerShell, set `$env:AWS_REGION="us-east-2"` and `$env:AWS_PROFILE="gtmsos"` before deployment.
+
 This CDK project is managed by the AgentCore CLI. It deploys your agent infrastructure into AWS using the `@aws/agentcore-cdk` L3 constructs.
 
 ## Structure

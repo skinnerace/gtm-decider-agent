@@ -1,5 +1,7 @@
 # Without Kiro: the same flow with make
 
+Deploy in `us-east-2` using AWS profile `gtmsos` (`AWS_REGION=us-east-2`, `AWS_PROFILE=gtmsos`). In PowerShell, set `$env:AWS_REGION="us-east-2"` and `$env:AWS_PROFILE="gtmsos"` before deployment.
+
 1. `./kit setup`: checks the machine and AWS, and chooses where the decider runs.
 2. Write your agent in `agent/`. Copy the example's shape (see `.kiro/steering/kit.md` for the
    contract), and start from the closest pattern in `decider_kit/patterns/`.

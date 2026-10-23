@@ -1,5 +1,7 @@
 # Strands Decider Hackathon Kit
 
+Deploy in `us-east-2` using AWS profile `gtmsos` (`AWS_REGION=us-east-2`, `AWS_PROFILE=gtmsos`). In PowerShell, set `$env:AWS_REGION="us-east-2"` and `$env:AWS_PROFILE="gtmsos"` before deployment.
+
 **From an idea to a complete Agent Experience Hackathon submission in about 30 minutes.**
 
 **New here? Follow [the step-by-step guide](GETTING-STARTED.md).**

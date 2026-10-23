@@ -66,7 +66,7 @@ whether they will deploy with Memory or Gateway (or decide later).
      (from https://www.awsugmdu.in) unless `.env` already has one;
    - Amazon Bedrock (path A): if `check-machine` found no AWS credentials, ask them to run
      `./kit aws-login` in the terminal and wait until it prints OK; if Bedrock model access is
-     missing, tell them to enable Amazon Nova Pro under Bedrock → Model access (us-east-1);
+     missing, tell them to enable Amazon Nova Pro under Bedrock → Model access (us-east-2);
    - local (path B): tell them Ollama (if missing) and the model download sizes, and get a yes:
      setup installs Ollama into their user folder.
 2. Run setup with their choices, non-interactively:
@@ -123,6 +123,8 @@ whether they will deploy with Memory or Gateway (or decide later).
 4. Ask whether to change anything. Loop back to step 4 for changes; move on when they are happy.
 
 ## 6. Deploy to AWS (5 min, mostly waiting)
+
+Use region `us-east-2` and AWS profile `gtmsos` (`AWS_REGION=us-east-2`, `AWS_PROFILE=gtmsos`).
 
 1. Remind them of the cost (pay per use; `./kit destroy` removes it) and that the deployed agent
    uses Amazon Bedrock and the hosted decider.

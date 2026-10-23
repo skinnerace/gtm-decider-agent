@@ -1,5 +1,7 @@
 # Your options: what to install, how long it takes, what it costs
 
+Deploy in `us-east-2` using AWS profile `gtmsos` (`AWS_REGION=us-east-2`, `AWS_PROFILE=gtmsos`). In PowerShell, set `$env:AWS_REGION="us-east-2"` and `$env:AWS_PROFILE="gtmsos"` before deployment.
+
 Kiro shows you this before building (`/hackathon`, step 1). Every number below was measured with
 this kit in October 2026 (Apple silicon laptop with 24 GB of RAM, and the AWS User Group Madurai
 cloud on CPU instances). Your machine and network will differ; `./kit setup` measures yours.

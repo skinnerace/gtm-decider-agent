@@ -60,5 +60,5 @@ def settings() -> Settings:
         medium_model=os.environ.get("BEDROCK_MEDIUM_MODEL_ID", DEFAULT_MEDIUM_MODEL),
         large_model=os.environ.get("BEDROCK_LARGE_MODEL_ID", main),
         bench_model=os.environ.get("BENCH_LLM_MODEL_ID", main),
-        aws_region=os.environ.get("AWS_REGION", os.environ.get("AWS_DEFAULT_REGION", "us-east-1")),
+        aws_region=os.environ.get("AWS_REGION", os.environ.get("AWS_DEFAULT_REGION", "us-east-2")),
     )

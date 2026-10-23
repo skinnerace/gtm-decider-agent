@@ -38,7 +38,7 @@ DEFAULT_LOCAL_MODEL = "qwen3.5:4b"
 UGMDU_MODELS = ["qwen3.5-4b", "gpt-oss-20b"]
 DEFAULT_UGMDU_MODEL = "qwen3.5-4b"
 
-# USD per 1M tokens (input, output), Amazon Bedrock us-east-1 on-demand, October 2026.
+# USD per 1M tokens (input, output), Amazon Bedrock us-east-2 on-demand, October 2026.
 BEDROCK_PRICES = {
     "amazon.nova-micro-v1:0": (0.035, 0.14),
     "amazon.nova-lite-v1:0": (0.06, 0.24),

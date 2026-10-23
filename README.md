@@ -48,7 +48,7 @@ cp .env.example .env
 For live use, edit .env locally with a hosted `DECIDER_API_KEY` and configure AWS credentials
 through the normal AWS credential chain. Never commit credentials. Environment variables
 win over .env. Defaults: `DECIDER_MODE=ugmdu`, hosted `DECIDER_URL` from .env.example,
-`BEDROCK_MODEL_ID=us.amazon.nova-pro-v1:0`, `AWS_REGION=us-east-1`,
+`BEDROCK_MODEL_ID=us.amazon.nova-pro-v1:0`, `AWS_REGION=us-east-2`,
 `PRIORITY_THRESHOLD=0.70`, `WARM_THRESHOLD=0.50`. The agent explicitly selects Bedrock
 through `decider_kit.llm.agent_model`; the benchmark also uses `LLM_PROVIDER=bedrock`.
 
@@ -90,6 +90,8 @@ The kit benchmark compares typed question labels; its accuracy is not three-way 
 No live accuracy, latency, cost or deployment claims are made by this offline build.
 
 ## AgentCore deployment
+
+Deploy in `us-east-2` using AWS profile `gtmsos` (`AWS_REGION=us-east-2`, `AWS_PROFILE=gtmsos`). In PowerShell, set `$env:AWS_REGION="us-east-2"` and `$env:AWS_PROFILE="gtmsos"` before deployment.
 
 Follow [deploy/AGENTCORE.md](deploy/AGENTCORE.md). The kit's `scripts/deploy.py` packages
 `agent/` and `decider_kit/`, passes the hosted endpoint, secret, thresholds, region and model

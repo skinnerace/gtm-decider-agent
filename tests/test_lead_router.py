@@ -166,7 +166,7 @@ def test_deploy_preserves_gate_environment(monkeypatch):
     env = decider_env()
     assert env['PRIORITY_THRESHOLD'] == '.82' and env['WARM_THRESHOLD'] == '.58'
     assert env['BEDROCK_MODEL_ID'] == 'us.amazon.nova-pro-v1:0'
-    assert env['LLM_PROVIDER'] == 'bedrock' and env['AWS_REGION'] == 'us-east-1'
+    assert env['LLM_PROVIDER'] == 'bedrock' and env['AWS_REGION'] == 'us-east-2'
 
 
 def test_agent_cases_work_with_kit_benchmark():
