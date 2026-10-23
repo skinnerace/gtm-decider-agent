@@ -1,0 +1,50 @@
+{
+  "Avery Example": {
+    "p": 0.92,
+    "stage": "growth"
+  },
+  "Blair Example": {
+    "p": 0.88,
+    "stage": "senior_leader"
+  },
+  "Casey Example": {
+    "p": 0.84,
+    "stage": "growth"
+  },
+  "Devon Example": {
+    "p": 0.78,
+    "stage": "mid"
+  },
+  "Ellis Example": {
+    "p": 0.62,
+    "stage": "established"
+  },
+  "Finley Example": {
+    "p": 0.55,
+    "stage": "mid"
+  },
+  "Gray Example": {
+    "p": 0.5,
+    "stage": "growth"
+  },
+  "Harper Example": {
+    "p": 0.69,
+    "stage": "senior_leader"
+  },
+  "Indigo Example": {
+    "p": 0.25,
+    "stage": "idea_early"
+  },
+  "Jordan Example": {
+    "p": 0.12,
+    "stage": "junior"
+  },
+  "Kai Example": {
+    "p": 0.08,
+    "stage": "established"
+  },
+  "Lane Example": {
+    "p": 0.32,
+    "stage": "mid"
+  }
+}

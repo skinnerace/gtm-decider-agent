@@ -1,0 +1,9 @@
+# Each lead is evaluated independently; avoid retaining personal lead data.
+memory:
+  enabled: false
+  name: agentmemory
+# One local tool and no external tool integrations need a gateway.
+gateway:
+  enabled: false
+  name: tools
+  targets: []

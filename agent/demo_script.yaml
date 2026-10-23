@@ -1,0 +1,26 @@
+title: "GTM Decider Agent \u2013 Signal to Story Router"
+pitch: Turn inbound signals into a relevant next step without sending outreach.
+features:
+- Founder and recruiter lead gate
+- Draft only for priority leads
+- Nurture or skip without generation
+- Inspect probabilities in the decision panel
+eager: false
+intro: Strands Decider gates each inbound lead before Amazon Bedrock drafts a personalized
+  note. Nothing is sent.
+turns:
+- say: '{"type": "founder", "name": "Avery Example", "title": "Founder and CEO", "company":
+    "Acme Robotics (fictional)", "notes": "Paying customers; expanding sales team
+    and explicitly seeking GTM advisory help."}'
+  narrate: A founder describes paying customers and a sales growth challenge.
+- say: '{"type": "founder", "name": "Ellis Example", "title": "CEO", "company": "Elm
+    Systems (fictional)", "notes": "Established business exploring future growth advice;
+    timing and budget unclear."}'
+  narrate: A CEO is exploring future help with unclear timing.
+- say: '{"type": "recruiter", "name": "Jordan Example", "title": "Sourcing Coordinator",
+    "company": "Juniper Hiring (fictional)", "notes": "Only recruits nurses and has
+    no commercial hiring needs."}'
+  narrate: A recruiter works exclusively in an unrelated hiring field.
+outro: Calibrated probabilities drive the lead policy, with human review when the
+  decider is unavailable. Built with the AWS User Group Madurai Strands Decider hackathon
+  kit
